@@ -8,13 +8,12 @@
     <style>
         body {
             margin: 0;
-            overflow: hidden;
+            overflow: auto; /* Set to 'auto' to enable scrolling */
             background: url('https://i.pinimg.com/originals/ba/61/17/ba6117b4600cc09312df321d9694b218.gif') center/cover fixed;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             color: #ffffff; /* Set text color to white for better visibility on the background */
         }
 
@@ -54,14 +53,20 @@
             }
         }
 
-        .text-container {
+        .text-container,
+        .bottom-panel,
+        .links-panel,
+        .content-panel {
             background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
             padding: 20px;
             border-radius: 10px;
             text-align: center;
+            margin-top: 20px; /* Added margin to the panels */
+        }
+
+        .text-container {
             display: flex;
             flex-direction: row;
-            align-items: center;
         }
 
         .icon {
@@ -83,20 +88,7 @@
             margin: 0 10px; /* Adjust margin to your preference */
         }
 
-        .bottom-panel {
-            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px; /* Added margin to the bottom panel */
-        }
-
         .links-panel {
-            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px; /* Added margin to the links panel */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -125,11 +117,8 @@
         }
 
         .content-panel {
-            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px; /* Added margin to the content panel */
+            /* Added a margin-bottom to the content panel */
+            margin-bottom: 20px;
         }
 
         /* Style for embedded video */
