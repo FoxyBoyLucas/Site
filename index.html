@@ -118,14 +118,24 @@
         }
 
         /* Style for link color */
-        .link-item a {
+        .link-item span {
             color: pink;
-            text-decoration: ; /* Remove underline */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer;
         }
 
-        /* Style for visited link color */
-        .link-item a:visited {
-            color: pink;
+        .content-panel {
+            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px; /* Added margin to the content panel */
+        }
+
+        /* Style for embedded video */
+        .content-panel iframe {
+            width: 100%; /* Make the video responsive */
+            height: 315px; /* Adjust height as needed */
         }
     </style>
 </head>
@@ -149,21 +159,26 @@
     <div class="links-panel">
         <div class="link-item">
             <img class="link-image" src="https://cdn.icon-icons.com/icons2/2873/PNG/512/youtube_pixel_logo_icon_181918.png" alt="Logo 1">
-            <a href="https://www.youtube.com/@barleydacat" target="_blank">https://www.youtube.com/@barleydacat</a>
+            <span onclick="window.open('https://www.youtube.com/@barleydacat', '_blank')">Click here for YouTube!</span>
         </div>
         <div class="link-item">
             <img class="link-image" src="https://preview.redd.it/l4hoaadmpkv51.png?auto=webp&s=6b7212479b502997cb8f976722baaf16b75e571d" alt="Logo 2">
-            <a href="https://www.twitch.tv/barleydacat" target="_blank">https://www.twitch.tv/barleydacat</a>
+            <span onclick="window.open('https://www.twitch.tv/barleydacat', '_blank')">Click here for Twitch!</span>
         </div>
         <div class="link-item">
             <img class="link-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eb029f1e-ebf1-4ddc-a285-6257f04b84d5/db6w18c-fbe5c399-42de-4777-a19f-79079fdf2332.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ViMDI5ZjFlLWViZjEtNGRkYy1hMjg1LTYyNTdmMDRiODRkNVwvZGI2dzE4Yy1mYmU1YzM5OS00MmRlLTQ3NzctYTE5Zi03OTA3OWZkZjIzMzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qT1_3VEJk2ZfhqhMJTNErmhXG5LNVXly6wmv9f4F16s" alt="Logo 3">
-            <a href="https://discord.gg/vFrZxHJeK8" target="_blank">https://discord.gg/vFrZxHJeK8</a>
+            <span onclick="window.open('https://discord.gg/vFrZxHJeK8', '_blank')">Click here for Discord!</span>
         </div>
         <div class="link-item">
             <img class="link-image" src="https://cdn.icon-icons.com/icons2/2873/PNG/512/twitter_pixel_logo_icon_181924.png" alt="Logo 4">
-            <a href="https://twitter.com/barleydacat" target="_blank">https://twitter.com/barleydacat</a>
+            <span onclick="window.open('https://twitter.com/barleydacat', '_blank')">Click here for Twitter!</span>
         </div>
         <!-- Add more link items as needed -->
+    </div>
+    <div class="content-panel">
+        <h2>CONTENT</h2>
+        <!-- Embed your content here -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f7uIQHENhVA?si=JaCjVvkp5AmJpgSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </body>
 
