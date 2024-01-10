@@ -17,6 +17,42 @@
             color: #ffffff; /* Set text color to white for better visibility on the background */
         }
 
+        .scrolling-text {
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: black;
+            font-weight: bold;
+            animation: rainbowText 10s infinite; /* Adjust duration as needed */
+        }
+
+        @keyframes rainbowText {
+            0% {
+                color: violet;
+            }
+            16% {
+                color: indigo;
+            }
+            32% {
+                color: blue;
+            }
+            48% {
+                color: green;
+            }
+            64% {
+                color: yellow;
+            }
+            80% {
+                color: orange;
+            }
+            100% {
+                color: red;
+            }
+        }
+
         .text-container {
             background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
             padding: 20px;
@@ -49,11 +85,14 @@
 </head>
 
 <body>
+    <div class="scrolling-text">
+        <marquee behavior="scroll" direction="left">This is your scrolling text at the very top of the page!</marquee>
+    </div>
     <div class="text-container">
         <div class="gifs-container">
             <img class="gif" src="https://i.pinimg.com/originals/e8/d0/f1/e8d0f1794e2520ac2367c1d21c0966e9.gif" alt="Barley Gif">
         </div>
-        <h1 class="title">barleydacat</h1>
+        <h1 class="title">Barley The Cat!</h1>
         <div class="gifs-container">
             <img class="gif" src="https://i.pinimg.com/originals/e8/d0/f1/e8d0f1794e2520ac2367c1d21c0966e9.gif" alt="Barley Gif">
         </div>
