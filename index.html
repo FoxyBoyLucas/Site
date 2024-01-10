@@ -11,6 +11,7 @@
             overflow: hidden;
             background: url('https://i.pinimg.com/originals/ba/61/17/ba6117b4600cc09312df321d9694b218.gif') center/cover fixed;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -81,6 +82,51 @@
             width: 100px; /* Adjust width to your preference */
             margin: 0 10px; /* Adjust margin to your preference */
         }
+
+        .bottom-panel {
+            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px; /* Added margin to the bottom panel */
+        }
+
+        .links-panel {
+            background-color: rgba(138, 43, 226, 0.7); /* Purple color with some transparency */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px; /* Added margin to the links panel */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .link-image {
+            width: 40px; /* Adjust default width to your preference */
+            margin-right: 10px; /* Added margin between image and link */
+        }
+
+        .link-logo {
+            max-width: 100%; /* Make the logo image resizable */
+        }
+
+        /* Style for link color */
+        .link-item a {
+            color: pink;
+            text-decoration: ; /* Remove underline */
+        }
+
+        /* Style for visited link color */
+        .link-item a:visited {
+            color: pink;
+        }
     </style>
 </head>
 
@@ -92,10 +138,32 @@
         <div class="gifs-container">
             <img class="gif" src="https://i.pinimg.com/originals/e8/d0/f1/e8d0f1794e2520ac2367c1d21c0966e9.gif" alt="Barley Gif">
         </div>
-        <h1 class="title">Barley The Cat!</h1>
+        <h1 class="title">barleydacat! x3</h1>
         <div class="gifs-container">
             <img class="gif" src="https://i.pinimg.com/originals/e8/d0/f1/e8d0f1794e2520ac2367c1d21c0966e9.gif" alt="Barley Gif">
         </div>
+    </div>
+    <div class="bottom-panel">
+        <h2>LINKS!</h2>
+    </div>
+    <div class="links-panel">
+        <div class="link-item">
+            <img class="link-image" src="https://cdn.icon-icons.com/icons2/2873/PNG/512/youtube_pixel_logo_icon_181918.png" alt="Logo 1">
+            <a href="https://www.youtube.com/@barleydacat" target="_blank">https://www.youtube.com/@barleydacat</a>
+        </div>
+        <div class="link-item">
+            <img class="link-image" src="https://preview.redd.it/l4hoaadmpkv51.png?auto=webp&s=6b7212479b502997cb8f976722baaf16b75e571d" alt="Logo 2">
+            <a href="https://www.twitch.tv/barleydacat" target="_blank">https://www.twitch.tv/barleydacat</a>
+        </div>
+        <div class="link-item">
+            <img class="link-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eb029f1e-ebf1-4ddc-a285-6257f04b84d5/db6w18c-fbe5c399-42de-4777-a19f-79079fdf2332.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ViMDI5ZjFlLWViZjEtNGRkYy1hMjg1LTYyNTdmMDRiODRkNVwvZGI2dzE4Yy1mYmU1YzM5OS00MmRlLTQ3NzctYTE5Zi03OTA3OWZkZjIzMzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qT1_3VEJk2ZfhqhMJTNErmhXG5LNVXly6wmv9f4F16s" alt="Logo 3">
+            <a href="https://discord.gg/vFrZxHJeK8" target="_blank">https://discord.gg/vFrZxHJeK8</a>
+        </div>
+        <div class="link-item">
+            <img class="link-image" src="https://cdn.icon-icons.com/icons2/2873/PNG/512/twitter_pixel_logo_icon_181924.png" alt="Logo 4">
+            <a href="https://twitter.com/barleydacat" target="_blank">https://twitter.com/barleydacat</a>
+        </div>
+        <!-- Add more link items as needed -->
     </div>
 </body>
 
